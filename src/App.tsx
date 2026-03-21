@@ -114,7 +114,10 @@ export default function App() {
               <h2 className="text-gold-600 text-sm md:text-base uppercase tracking-[0.3em] mb-4 font-medium">
                 Essential Relief Mobile Spa
               </h2>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-brown-900 mb-6 leading-tight">
+              <h1 
+                className="text-4xl md:text-6xl lg:text-7xl font-serif text-brown-900 mb-6 leading-tight"
+                style={{ borderColor: '#3a2720' }}
+              >
                 Luxury In-Home Massage, Facials & Body Treatments in Orlando
               </h1>
               <p className="text-brown-700 text-lg md:text-xl mb-10 font-light leading-relaxed max-w-lg">
