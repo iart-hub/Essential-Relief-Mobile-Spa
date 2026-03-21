@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/Essential-Relief-Mobile-Spa/",
   build: {
-    outDir: 'docs'  // ← ADICIONE ISSO!
+    outDir: 'docs'
   }
 })
