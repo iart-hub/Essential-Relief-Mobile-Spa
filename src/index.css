@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --color-nude-50: #FDFBF7;
+  --color-nude-100: #F5EBE1;
+  --color-nude-200: #EADAC9;
+  --color-nude-300: #D8C3A5;
+  
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #A67C00;
+
+  --color-brown-700: #5C4033;
+  --color-brown-800: #4A3B32;
+  --color-brown-900: #2B1F19;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-nude-50);
+    color: var(--color-brown-800);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-brown-900);
+  }
+}
+
+.btn-primary {
+  @apply inline-block bg-gold-500 text-white px-8 py-4 uppercase tracking-widest text-sm font-medium transition-all duration-300 hover:bg-gold-600 hover:shadow-lg;
+}
+
+.btn-outline {
+  @apply inline-block border border-gold-500 text-gold-600 px-8 py-4 uppercase tracking-widest text-sm font-medium transition-all duration-300 hover:bg-gold-500 hover:text-white;
+}
+
+.section-padding {
+  @apply py-20 md:py-32;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
